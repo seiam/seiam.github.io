@@ -4,7 +4,7 @@ import './App.css';
 
 function App() {
 
-  document.title = "Hello bb"
+  document.title = "*Lick*"
   return (
     <div className="App">
     	<NavigationBar/>

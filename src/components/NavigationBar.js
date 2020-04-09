@@ -33,7 +33,7 @@ export default function NavigationBar() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" className={classes.title}>
-            Hi Judy
+            sexy time headquarters
           </Typography>
         </Toolbar>
         <TemporaryDrawer open={openLeftMenu} onClose={() => setOpenLeftMenu(false)}/>
