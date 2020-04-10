@@ -18,7 +18,11 @@ export default function Home(props) {
     const classes = useStyles();
     return (
         <Paper className={classes.paper}>
-            <h2 className="m-2 p-2">Welcome to my webpage!</h2>
+            <h2 className="m-2">Welcome to my webpage!</h2>
+            <p className="m-2">
+                This website is still in development, but look around to learn about me. 
+                <span role="img" aria-label="sheep">😃</span>
+            </p>
 
         </Paper>
     );

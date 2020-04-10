@@ -3,6 +3,10 @@ import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
+import {Button} from '@material-ui/core';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import Tooltip from '@material-ui/core/Tooltip';
+
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -18,8 +22,6 @@ const useStyles = makeStyles((theme) => ({
 export default function NavigationBar() {
   const classes = useStyles();
 
-  const [openLeftMenu, setOpenLeftMenu] = useState(false);
-
   return (
     <div className={classes.root}>
       <AppBar position="static">
@@ -27,6 +29,11 @@ export default function NavigationBar() {
           <Typography variant="h6" className={classes.title}>
             Seiam's Webpage
           </Typography>
+          <Tooltip title="My LinkedIn Page">
+            <Button onClick={() => window.open("https://www.linkedin.com/in/seiam-salehi/")}>
+              <LinkedInIcon/>
+            </Button>
+          </Tooltip>
         </Toolbar>
       </AppBar>
     </div>

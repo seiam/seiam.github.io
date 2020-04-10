@@ -16,7 +16,7 @@ export default function Body(props) {
   return (
     <div className="row">
         <Router>
-            <div className="col-4">
+            <div className="col-3 m-2">
                 <Menu/>
             </div>
             <div className="col-8">

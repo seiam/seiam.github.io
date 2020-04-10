@@ -15,7 +15,6 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
   },
   paper: {
-    margin: theme.spacing(2)
   },
 }));
 
@@ -24,7 +23,7 @@ function Menu() {
   const classes = useStyles();
 
   return (
-      <Paper className={classes.paper}>
+      <Paper className='ml-1'>
         <MenuList>
           {/* <MenuItem><Link to="/">Home</Link></MenuItem>
           <MenuItem><Link to="/resume">Resume</Link></MenuItem>
